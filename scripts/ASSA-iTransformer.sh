@@ -38,13 +38,13 @@ for ((i=0; i<${#nums[@]}; i++)) ;do
         --learning_rate ${learning_rate} \
         --batch_size ${batch_size} \
         --subsequence_num ${subsequence_num} \
-        --features M \
+        --features S \
         --seq_len 8 \
         --label_len 1 \
         --pred_len 1 \
-        --enc_in 4 \
-        --dec_in 4 \
-        --c_out 4 \
+        --enc_in 1 \
+        --dec_in 1 \
+        --c_out 1 \
         --des 'Exp' \
         --itr 1
     done
